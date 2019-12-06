@@ -1,3 +1,6 @@
 .support-text {
+  margin-top: 8vh;
   color: #CCCCCC;
+  font-size: 26rpx;
+  text-align: center;
 }

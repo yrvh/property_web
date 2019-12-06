@@ -37,9 +37,15 @@
 <view class="home-intelligence">
   <view class="home-intelligence-title"><text class="home-intelligence-title-icon">|</text> 智慧物业</view>
   <view class="home-intelligence-content">
-    <view class="home-intelligence-content-child bill"></view>
-    <view class="home-intelligence-content-child repairs"></view>
+    <view class="home-intelligence-content-child bill">
+      <view>我的账单</view>
+      <view class="bill-text">立即查看最新账单</view>
+    </view>
+    <view class="home-intelligence-content-child repairs">
+      <view>我的报修</view>
+      <view class="repairs-text">立即查看最新报修</view>
+    </view>
   </view>
 </view>
 
-<include src="../../support/support.wxml"></include>
+<include src="/components/support/support.wxml"></include>

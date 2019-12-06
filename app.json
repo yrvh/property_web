@@ -4,8 +4,7 @@
     "pages/mine/mine",
     "pages/notice/notice",
     "pages/repairs/repairs",
-    "pages/payment/payment",
-    "components/support/support"
+    "pages/payment/payment"
   ],
   "window": {
     "navigationBarBackgroundColor": "#218ADB",
