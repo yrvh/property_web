@@ -1,0 +1,60 @@
+{
+  "pages": [
+    "pages/home/home",
+    "pages/mine/mine",
+    "pages/notice/notice",
+    "pages/repairs/repairs",
+    "pages/payment/payment",
+    "components/support/support"
+  ],
+  "window": {
+    "navigationBarBackgroundColor": "#218ADB",
+    "navigationBarTitleText": "同盛物业",
+    "navigationBarTextStyle": "white"
+  },
+  "tabBar": {
+    "color": "#999999",
+    "selectedColor": "#218ADB",
+    "backgroundColor": "#ffffff",
+    "borderStyle": "black",
+    "position": "bottom",
+    "list": [{
+        "pagePath": "pages/home/home",
+        "text": "首页",
+        "iconPath": "/assets/icon/home.png",
+        "selectedIconPath": "/assets/icon/home2.png"
+      },
+      {
+        "pagePath": "pages/notice/notice",
+        "text": "公告",
+        "iconPath": "/assets/icon/notice.png",
+        "selectedIconPath": "/assets/icon/notice2.png"
+      },
+      {
+        "pagePath": "pages/payment/payment",
+        "text": "缴费",
+        "iconPath": "/assets/icon/payment.png",
+        "selectedIconPath": "/assets/icon/payment2.png"
+      },
+      {
+        "pagePath": "pages/repairs/repairs",
+        "text": "报修",
+        "iconPath": "/assets/icon/repairs.png",
+        "selectedIconPath": "/assets/icon/repairs2.png"
+      },
+      {
+        "pagePath": "pages/mine/mine",
+        "text": "我的",
+        "iconPath": "/assets/icon/mine.png",
+        "selectedIconPath": "/assets/icon/mine2.png"
+      }]
+  },
+  "networkTimeout": {
+    "request": 10000,
+    "connectSocket": 20000,
+    "uploadFile": 20000,
+    "downloadFile": 20000
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json"
+}

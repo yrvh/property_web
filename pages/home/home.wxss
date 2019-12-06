@@ -1,0 +1,103 @@
+.home-community-addr {
+  background-color: #FF6D6D;
+  height: 4.23vh;
+  width: 100%;
+  color: #ffffff;
+  font-size: 28rpx;
+  padding-left: 36rpx;
+  line-height: 4.23vh;
+}
+
+.home-image {
+  height: 25.07vh;
+  width: 100%;
+}
+
+.home-link {
+  width: 100%;
+  height: 16.48vh;
+  border-bottom: 1.41vh solid #EEEEEE;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.home-link-img{
+  width: 7.89vh;
+  height: 7.89vh;
+  border-radius: 3.94vh;
+}
+.img-notice{
+  background-color: #218BDB;
+}
+.img-payment{
+  background-color: #17D2A2;
+}
+.img-repairs{
+  background-color: #FD9E3F;
+}
+.img-binding{
+  background-color: #FF6E6D;
+}
+.home-link-text{
+  margin-top: 0.85vh;
+  font-size: 28rpx;
+  width: 7.89vh;
+  text-align: center;
+}
+
+.home-newnotice{
+  width: 100%;
+  height: 5.49vh;
+  border-bottom: 2rpx solid #EEEEEE;
+  padding: 1.69vh 0;
+}
+.home-newnotice-title{
+  float: left;
+  width: 158rpx;
+  line-height: 4.93vh;
+  text-align: center;
+  color: #FF6D6D;
+  font-size: 30rpx;
+}
+.home-newnotice-content{
+  float: right;
+  height: 5.49vh;
+  width: 542rpx;
+  font-size: 24rpx;
+  border-left: 2rpx solid #EEEEEE;
+  padding: 0 24rpx;
+}
+.home-newnotice-content-date {
+  float: right;
+  color: #999999;
+}
+
+.home-intelligence {
+  width: 100%;
+  height: 20.14vh;
+}
+.home-intelligence-title {
+  font-size: 30rpx;
+  margin: 1.41vh 0 0 28rpx;
+}
+.home-intelligence-title-icon {
+  color: #FF6D6D;
+}
+.home-intelligence-content {
+  padding: 0 50rpx;
+  display: flex;
+  height: 15.63vh;
+  align-items: flex-end;
+  justify-content: space-between;
+}
+.home-intelligence-content-child {
+  width: 310rpx;
+  height: 13.1vh;
+  border-radius: 8rpx;
+}
+.bill{
+  background-color: #FF6D6D;
+}
+.repairs {
+  background-color: #bad7ad;
+}

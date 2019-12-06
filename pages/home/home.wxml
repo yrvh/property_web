@@ -1,0 +1,45 @@
+<view class="home-community-addr">选择小区 [切换]</view>
+<view><image class="home-image" src="/resources/image/swiper1.png"/></view>
+<view class="home-link">
+  <view>
+    <view class="home-link-img img-notice"></view>
+    <view class="home-link-text">公告</view>
+  </view>
+  <view>
+    <view class="home-link-img img-payment"></view>
+    <view class="home-link-text">缴费</view>
+  </view>
+  <view>
+    <view class="home-link-img img-repairs"></view>
+    <view class="home-link-text">报修</view>
+  </view>
+  <view>
+    <view class="home-link-img img-binding"></view>
+    <view class="home-link-text">绑定</view>
+  </view>
+</view>
+
+<view class="home-newnotice">
+  <view class="home-newnotice-title">最新公告</view>
+  <view class="home-newnotice-content">
+    <view>
+      <text>小区停车管理条例</text>
+      <text class="home-newnotice-content-date">2019-02-10</text>
+    </view>
+    <view>
+      <text>关于小区老年活动中心启用的</text>
+      <text class="home-newnotice-content-date">2019-02-13</text>
+    </view>
+    
+  </view>
+</view>
+
+<view class="home-intelligence">
+  <view class="home-intelligence-title"><text class="home-intelligence-title-icon">|</text> 智慧物业</view>
+  <view class="home-intelligence-content">
+    <view class="home-intelligence-content-child bill"></view>
+    <view class="home-intelligence-content-child repairs"></view>
+  </view>
+</view>
+
+<include src="../../support/support.wxml"></include>
