@@ -1,1 +1,14 @@
-<view>这是 "公告" 页</view>
+<block wx:for="{{10}}">
+  <view class="notice-body">
+    <view class="notice-body-title">关于小区地面整改</view>
+    <view class="notice-body-new">
+      <view class="notice-body-newBG"></view>
+      <text>最新</text>
+    </view>
+    <view class="notice-body-date">2019-02-12</view>
+    <view class="notice-body-content">由于我小区道路狭窄,地面进出和停放的机动车辆过多,严重影响了老
+    人,小孩和行人的出行方便,kal
+    </view>
+    <view class="notice-body-all">查看全部 ></view>
+  </view>
+</block>

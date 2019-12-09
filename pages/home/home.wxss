@@ -87,13 +87,13 @@
 }
 .home-intelligence-content {
   margin-top: 2.39vh;
-  padding: 0 45rpx;
+  padding: 0 20rpx;
   display: flex;
   justify-content: space-around;
   background-color: #218BDB;
 }
 .home-intelligence-content-child {
-  width: 26.4vh;
+  width: 24vh;
   height: 16vh;
   border-radius: 8rpx;
   padding: 1.1vh 0 0 2vh;
