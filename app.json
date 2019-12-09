@@ -1,7 +1,8 @@
 {
   "pages": [
-    "pages/notice/notice",
+    "pages/notice/notDetail/notDetail",
     "pages/home/home",
+    "pages/notice/notice",
     "pages/mine/mine",
     "pages/repairs/repairs",
     "pages/payment/payment"
@@ -17,7 +18,8 @@
     "backgroundColor": "#ffffff",
     "borderStyle": "black",
     "position": "bottom",
-    "list": [{
+    "list": [
+      {
         "pagePath": "pages/home/home",
         "text": "首页",
         "iconPath": "/assets/icon/home.png",
@@ -46,7 +48,8 @@
         "text": "我的",
         "iconPath": "/assets/icon/mine.png",
         "selectedIconPath": "/assets/icon/mine2.png"
-      }]
+      }
+    ]
   },
   "networkTimeout": {
     "request": 10000,

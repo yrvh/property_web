@@ -1,0 +1,18 @@
+.noticedetail-body {
+  padding: 46rpx 50rpx 0 50rpx;
+}
+.noticedetail-body-title {
+  width: 100%;
+  text-align: center;
+  font-size: 32rpx;
+}
+.noticedetail-body-content {
+  margin-top: 58rpx;
+  font-size: 26rpx;
+  line-height: 26px;
+}
+.noticedetail-body-badging {
+  margin-top: 65rpx;
+  text-align: right;
+  font-size: 24rpx;
+}
