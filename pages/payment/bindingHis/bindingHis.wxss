@@ -1,0 +1,94 @@
+page{
+  background-color: #EEE;
+}
+
+
+.payment-house {
+  position: relative;
+  width:634rpx;
+  margin: 146rpx auto;
+  background-color: #FFF;
+  border-radius: 12rpx;
+  padding-bottom: 40rpx;
+}
+.payment-house-title {
+  line-height: 92rpx;
+  border-bottom: 2rpx solid #EEE;
+  font-size: 34rpx;
+  text-align: center;
+}
+.payment-house-title-close {
+  position: absolute;
+  right: 25rpx;
+  top: 25rpx;
+  width: 42rpx;
+  height: 42rpx;
+}
+.payment-house-content {
+  padding: 46rpx 65rpx 20rpx 65rpx;
+  font-size: 26rpx;
+}
+.payment-house-content text{
+  display: inline-block;
+  width: 120rpx;
+  line-height: 54rpx;
+  text-align: right;
+}
+  
+.payment-house-content input{
+  height: 50rpx;
+  width: 380rpx;
+  border: 2rpx solid #DDD;
+  border-radius: 8rpx;
+  float: right;
+}
+.payment-house-content-address {
+  margin-bottom: 20rpx;
+}
+.payment-house-content-housenum {
+  margin-bottom: 20rpx;
+}
+.payment-house-content-name {
+  margin-bottom: 20rpx;
+}
+.payment-house-content-tel {
+  margin-bottom: 20rpx;
+}
+.payment-house-message {
+  padding: 0 65rpx;
+  margin-bottom: 55rpx;
+}
+.payment-house-message text{
+  color: #999999;
+  font-size: 24rpx;
+  line-height: 42rpx;
+}
+
+.payment-house-btn {
+  margin: 0 auto;
+  line-height: 90rpx;
+  width: 376rpx;
+  border-radius: 45rpx;
+  color: #fff;
+  text-align: center;
+  background-color: #35D7AD;
+}
+
+.payment-success {
+  position: relative;
+  width:634rpx;
+  height: 364rpx;
+  margin: 530rpx auto;
+  background-color: #FFF;
+  border-radius: 12rpx;
+  font-size: 34rpx;
+}
+.payment-no {
+  position: relative;
+  width:634rpx;
+  height: 364rpx;
+  margin: 530rpx auto;
+  background-color: #FFF;
+  border-radius: 12rpx;
+  font-size: 34rpx;
+}

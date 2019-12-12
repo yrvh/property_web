@@ -1,16 +1,30 @@
-// pages/payment/payment.js
 Page({
-
-  /**
-   * 页面的初始数据
-   */
   data: {
-
+    active: 2,
+    notpayIconPath: "/assets/icon/notpay2.png",
+    historyIconPath: "/assets/icon/history2.png",
+  },
+  handleChangeNav(e) {   // 切换 "待缴费用"和"缴费记录"页的函数
+    this.setData({
+      active: parseInt(e.currentTarget.dataset.num),
+    })
+    this.setData({
+      notpayIconPath: "/assets/icon/notpay" + this.data.active + ".png",
+      historyIconPath: "/assets/icon/history" + this.data.active + ".png",
+    })
+  },
+  handleNotpayToBinding() {
+    wx.navigateTo({
+      url: '/pages/payment/binding/binding',
+    })
+  },
+  handleHistoryToBinding() {
+    wx.navigateTo({
+      url: '/pages/payment/bindingHis/bindingHis',
+    })
   },
 
-  /**
-   * 生命周期函数--监听页面加载
-   */
+
   onLoad: function (options) {
 
   },

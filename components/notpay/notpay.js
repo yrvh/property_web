@@ -1,4 +1,4 @@
-// components/support/support.js
+// components/payment-notpay/notpay.js
 Component({
   /**
    * 组件的属性列表

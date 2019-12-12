@@ -60,7 +60,10 @@ Page({
   /**
    * 用户点击右上角分享
    */
-  onShareAppMessage: function () {
-
+  onShareAppMessage() {
+    return {
+      title: '同盛物业-智慧社区',
+      path: '/page/home/home'
+    }
   }
 })

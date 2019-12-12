@@ -1,11 +1,13 @@
 {
   "pages": [
-    "pages/notice/notDetail/notDetail",
+    "pages/payment/payment",
+    "pages/payment/binding/binding",
     "pages/home/home",
+    "pages/notice/notDetail/notDetail",
     "pages/notice/notice",
     "pages/mine/mine",
     "pages/repairs/repairs",
-    "pages/payment/payment"
+    "pages/payment/bindingHis/bindingHis"
   ],
   "window": {
     "navigationBarBackgroundColor": "#218ADB",
@@ -58,5 +60,11 @@
     "downloadFile": 20000
   },
   "style": "v2",
-  "sitemapLocation": "sitemap.json"
+  "sitemapLocation": "sitemap.json",
+  "usingComponents": {
+    "support": "/components/support/support",
+    "gray-bg": "/components/grayBG/grayBG",
+    "bind-house": "/components/bind-house/bind-house",
+    "no-record": "/components/no-record-img/no-record-img"
+  }
 }

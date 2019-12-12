@@ -1,1 +1,44 @@
-/* pages/payment/payment.wxss */
+page{
+  background-color: #EEE;
+}
+.payment-header {
+  width: 100%;
+  height: 102rpx;
+  background-color: #218ADB;
+}
+.payment-nav {
+  width: 600rpx;
+  height: 86rpx;
+  margin: 0 auto;
+  background-color: #fff;
+  border-radius: 43rpx; 
+  position: relative;
+  top: -43rpx;
+}
+.payment-nav-child {
+  line-height: 86rpx;
+  width: 299rpx;
+  float: left;
+  font-size: 30rpx;
+  margin: auto;
+  text-align: center;
+}
+.payment-nav-child-icon {
+  width: 40rpx;
+  height: 40rpx;
+  position: relative;
+  top: 8rpx;
+  left: -8rpx;
+}
+
+
+
+.nav-child-border {
+  border-right: 2rpx solid #DDD;
+}
+.nav-active-notpay {
+  color: #f00;
+}
+.nav-active-history {
+  color: #f00;
+}

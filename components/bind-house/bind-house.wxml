@@ -1,0 +1,5 @@
+<view class="bind-house">
+  <view class="bind-house-title">{{title}}</view>
+  <view class="bind-house-message">{{message}}</view>
+  <view class="bind-house-btn" bindtap="handleBindHouse">{{btn}}</view>
+</view>

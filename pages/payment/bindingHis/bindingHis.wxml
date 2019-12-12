@@ -1,0 +1,52 @@
+<!-- 引入自定义的 全局组件, 实现绑定的导航功能 -->
+<bind-house title="{{bindTitle}}" message="{{bindMessage}}" btn="{{bindBtn}}" bind:tapBindHouse="handleShowHouse"/>
+
+<!-- 引入自定义的 全局组件, 实现无记录时的 提醒背景图 -->
+<no-record wx:if="{{houseList.length==0}}"/>
+
+
+
+
+<!-- 绑定房间时 个人信息填写弹窗 -->
+<gray-bg wx:if="{{showHouse}}">
+  <view class="payment-house">
+    <view class="payment-house-title">绑定房间
+      <image  src="/assets/icon/houseClose.png" 
+              bindtap="handleCloseHouse" 
+              class="payment-house-title-close"></image>
+    </view>
+
+    <view class="payment-house-content">
+      <view class="payment-house-content-address">
+        <text>我的小区:</text>
+        <input/>
+      </view>
+      <view class="payment-house-content-housenum">
+        <text>房间号:</text>
+        <input/>
+      </view>
+      <view class="payment-house-content-name">
+        <text>姓名:</text>
+        <input/>
+      </view>
+      <view class="payment-house-content-tel">
+        <text>电话号:</text>
+        <input/>
+      </view>
+    </view>
+
+    <view class="payment-house-message">
+      <text>请正确填写信息: \n</text>
+      <text>(1) 2栋303室填写格式为: 2#303 \n</text>
+      <text decode="{{true}}">(2) 姓名, 电话号码为物业登记信息 \n &ensp;&ensp;&ensp;备注: 姓名, 电话如需更改, 请联系物业</text>
+    </view>
+
+    <view class="payment-house-btn" bindtap="handleHouseBtn">确定</view>
+  </view>
+</gray-bg>
+
+<!-- 个人信息提交时的 弹窗 -->
+<gray-bg wx:if="{{showSuccess}}">
+  <view class="payment-success" wx:if="{{bindSuccess}}">我是绑定成功页</view>
+  <view class="payment-no" wx:if="{{!bindSuccess}}">我是绑定失败页</view>
+</gray-bg>

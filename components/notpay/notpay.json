@@ -1,0 +1,6 @@
+{
+  "component": true,
+  "usingComponents": {
+    "house-cost": "/components/house-cost/house-cost"
+  }
+}

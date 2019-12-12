@@ -1,1 +1,25 @@
-<view>这是 "缴费"页</view>
+<block>
+  <view class="payment-header"></view>
+  <view class="payment-nav">
+    <view class="payment-nav-child  nav-child-border {{active==1? 'nav-active-notpay': ''}}"
+          bindtap="handleChangeNav" 
+          data-num="1">
+      <image src="{{notpayIconPath}}" class="payment-nav-child-icon" bindtap="handleNotpayToBinding"/>
+      <text>待缴费用</text>
+    </view>
+    <view class="payment-nav-child {{active==2? 'nav-active-history': ''}}"
+          bindtap="handleChangeNav" 
+          data-num="2">
+      <image src="{{historyIconPath}}" class="payment-nav-child-icon" bindtap="handleHistoryToBinding"/>
+      <text>缴费记录</text>
+    </view>
+  </view>
+
+  <notpay wx:if="{{active==1}}"/>
+</block>
+
+
+
+
+
+

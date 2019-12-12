@@ -1,0 +1,46 @@
+.house-cost {
+  height: 490rpx;
+  margin: 30rpx 40rpx;
+  border-radius: 12rpx;
+  background-color: #fff;
+}
+.house-cost-detail {
+  height: 276rpx;
+  padding: 25rpx;
+  position: relative;
+  font-size: 26rpx;
+}
+.house-cost-detail text {
+  color: #F5595A;
+}
+.house-cost-detail-title {
+  margin-bottom: 30rpx;
+  font-weight: 700;
+}
+.house-cost-detail-title text {
+  color: #999999;
+}
+.house-cost-detail-server {
+  margin-bottom: 28rpx;
+  font-weight: 540;
+}
+.house-cost-detail-loss {
+  margin-bottom: 28rpx;
+}
+.house-cost-detail-rubbish {
+  margin-bottom: 28rpx;
+}
+.house-cost-detail-total {
+  text-align: right;
+  font-weight: 500;
+}
+.house-cost-detail-btn {
+  position: absolute;
+  top: 25rpx;
+  right: 25rpx;
+  width: 130rpx;
+  line-height: 58rpx;
+  text-align: center;
+  font-size: 30rpx;
+  border-radius: 29rpx;
+}

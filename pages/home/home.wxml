@@ -48,4 +48,5 @@
   </view>
 </view>
 
-<include src="/components/support/support.wxml"></include>
+<!-- <include src="/components/support/support.wxml"></include> -->
+<support />

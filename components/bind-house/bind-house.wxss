@@ -1,0 +1,23 @@
+.bind-house {
+  height: 78rpx;
+  background-color: #fff;
+  padding: 30rpx;
+  font-size: 30rpx;
+  position: relative;
+}
+.bind-house-message {
+  font-size: 24rpx;
+  color: #999999;
+  margin-top: 14rpx;
+}
+.bind-house-btn {
+  position: absolute;
+  right: 30rpx;
+  top: 34rpx;
+  width: 182rpx;
+  line-height: 70rpx;
+  border-radius: 35rpx;
+  background-color: #FF6D6D;
+  text-align: center;
+  color: #fff;
+}

@@ -1,0 +1,21 @@
+<view class="notpay-total">
+  <view class="notpay-total-money">当前2个月待缴总金额: <text> ¥1062.40</text>元</view>
+  <view class="notpay-total-btn">一键缴费</view>
+</view>
+
+<block wx:for="{{3}}" wx:key="{{index}}">
+
+  <!-- 引入自定义的 局部组件,实现房间费用信息的显示 -->
+  <house-cost houseNum="2#303" 
+              propertyFee="¥185.00" 
+              commonFee="¥15.00" 
+              rubbishFee="¥10.00" 
+              totalFee="¥210"
+              cost-btn="cost-btn">
+
+    <view class="notpay-message">
+      <view class="notpay-message-title">费用于2019年05月30日前缴付!</view>
+      <text class="notpay-message-remark">备注: 请在次月15前缴纳费用, 逾期产生的滞纳金按照每日3%收取</text>
+    </view>
+  </house-cost>
+</block>

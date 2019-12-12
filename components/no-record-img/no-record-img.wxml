@@ -1,0 +1,4 @@
+<view class="no-record">
+  <image src="{{recordImg}}" class="no-record-icon"></image>
+  <view class="no-record-text">{{recordText}}</view>
+</view>

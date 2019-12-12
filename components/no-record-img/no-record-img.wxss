@@ -1,0 +1,17 @@
+.no-record {
+  width: 210rpx;
+  margin: 0 auto;
+  margin-top: 280rpx;
+}
+.no-record-icon {
+  height: 210rpx;
+  width: 210rpx;
+  margin:auto;
+}
+.no-record-text {
+  width: 210rpx;
+  color: #999999;
+  text-align: center;
+  margin-top: 20rpx;
+  font-size: 22rpx;
+}
