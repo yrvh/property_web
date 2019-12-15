@@ -44,3 +44,7 @@
 }
 
 
+.notpay-showCostDetails {
+  margin: 165rpx auto;
+  height: 500rpx;
+}

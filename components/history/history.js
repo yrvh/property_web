@@ -1,4 +1,4 @@
-// components/grayBG/grayBG.js
+// components/history/history.js
 Component({
   /**
    * 组件的属性列表
@@ -6,7 +6,6 @@ Component({
   properties: {
 
   },
-  externalClasses: ['window-top'],
 
   /**
    * 组件的初始数据
@@ -19,8 +18,6 @@ Component({
    * 组件的方法列表
    */
   methods: {
-    handleWindowClose() {
-      this.triggerEvent('tapWindowClose', {}, {})
-    }
+
   }
 })

@@ -35,62 +35,61 @@
 </block>
 
 <!-- 绑定房间时 个人信息填写弹窗 -->
-<gray-bg wx:if="{{showHouse}}">
-  <view class="payment-house">
-    <view class="payment-house-title">绑定房间
-      <image  src="/assets/icon/houseClose.png" 
-              bindtap="handleCloseHouse" 
-              class="payment-house-title-close"></image>
-    </view>
+<gray-bg wx:if="{{showHouse}}" 
+          bind:tapWindowClose="handleHouseClose"
+          window-top="payment-house">
+  <view class="payment-house-title">绑定房间</view>
 
-    <view class="payment-house-content">
-      <view class="payment-house-content-address">
-        <text>我的小区:</text>
-        <input/>
-      </view>
-      <view class="payment-house-content-housenum">
-        <text>房间号:</text>
-        <input/>
-      </view>
-      <view class="payment-house-content-name">
-        <text>姓名:</text>
-        <input/>
-      </view>
-      <view class="payment-house-content-tel">
-        <text>电话号:</text>
-        <input/>
-      </view>
+  <view class="payment-house-content">
+    <view class="payment-house-content-address">
+      <text>我的小区:</text>
+      <input/>
     </view>
-
-    <view class="payment-house-message">
-      <text>请正确填写信息: \n</text>
-      <text>(1) 2栋303室填写格式为: 2#303 \n</text>
-      <text decode="{{true}}">(2) 姓名, 电话号码为物业登记信息 \n &ensp;&ensp;&ensp;备注: 姓名, 电话如需更改, 请联系物业</text>
+    <view class="payment-house-content-housenum">
+      <text>房间号:</text>
+      <input/>
     </view>
-
-    <view class="payment-house-btn" bindtap="handleHouseBtn">确定</view>
+    <view class="payment-house-content-name">
+      <text>姓名:</text>
+      <input/>
+    </view>
+    <view class="payment-house-content-tel">
+      <text>电话号:</text>
+      <input/>
+    </view>
   </view>
+
+  <view class="payment-house-message">
+    <text>请正确填写信息: \n</text>
+    <text>(1) 2栋303室填写格式为: 2#303 \n</text>
+    <text decode="{{true}}">(2) 姓名, 电话号码为物业登记信息 \n &ensp;&ensp;&ensp;备注: 姓名, 电话如需更改, 请联系物业</text>
+  </view>
+
+  <view class="payment-house-btn" bindtap="handleHouseBtn">确定</view>
 </gray-bg>
+
 
 <!-- 个人信息提交时的 弹窗 -->
-<gray-bg wx:if="{{showSuccess}}">
+<gray-bg wx:if="{{showSuccess}}" 
+          bind:tapWindowClose="handleSuccessClose"
+          window-top="payment-showSuccess">
   <view class="payment-success" wx:if="{{bindSuccess}}">我是绑定成功页</view>
-  <view class="payment-no" wx:if="{{!bindSuccess}}">我是绑定失败页</view>
+  <view class="payment-noSucc" wx:if="{{!bindSuccess}}">我是绑定失败页</view>
 </gray-bg>
 
+
 <!-- 解除 绑定房间的弹窗 -->
-<gray-bg wx:if="{{showRemove}}">
-  <view class="payment-remove">
-    <view class="payment-remove-message">您确定要解除绑定?</view>
-    <image src="/assets/icon/houseClose.png" 
-           class="payment-remove-close"
-           bindtap="handleCloseRemove"></image>
-    <view class="payment-remove-btn {{activeRemoveBtn==0? 'payment-remove-no':''}}"
-          bindtap="handleNoRemove"
-          data-num="0">取消</view>
-    <view class="payment-remove-btn {{activeRemoveBtn==1? 'payment-remove-sure':''}}"
-          bindtap="handleSureRemove"
-          data-num="1">确定</view>
+<gray-bg wx:if="{{showRemove}}" 
+          bind:tapWindowClose="handleRemoveClose"
+          window-top="payment-showRemove">
+  <view class="payment-remove-message">您确定要解除绑定?</view>
+  <view class="payment-remove-btn {{activeRemoveBtn==0? 'payment-remove-no':''}}"
+        bindtap="handleNoRemove"
+        data-num="0">取消
+  </view>
+  <view class="payment-remove-btn {{activeRemoveBtn==1? 'payment-remove-sure':''}}
+        bindtap="handleSureRemove"
+        data-num="1">确定
   </view>
 </gray-bg>
 

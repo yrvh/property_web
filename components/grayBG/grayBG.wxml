@@ -1,3 +1,10 @@
 <view class="grayBG">
-  <slot />
+  <view class="grayBG-window window-top">
+    <image  src="/assets/icon/houseClose.png" 
+                bindtap="handleWindowClose" 
+                class="grayBG-window-close">
+    </image>
+    
+    <slot />
+  </view>
 </view>

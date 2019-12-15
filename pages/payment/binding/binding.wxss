@@ -3,12 +3,7 @@ page{
 }
 
 .payment-house {
-  position: relative;
-  width:634rpx;
   margin: 146rpx auto;
-  background-color: #FFF;
-  border-radius: 12rpx;
-  padding-bottom: 40rpx;
 }
 .payment-house-title {
   line-height: 92rpx;
@@ -16,13 +11,7 @@ page{
   font-size: 34rpx;
   text-align: center;
 }
-.payment-house-title-close {
-  position: absolute;
-  right: 25rpx;
-  top: 25rpx;
-  width: 42rpx;
-  height: 42rpx;
-}
+
 .payment-house-content {
   padding: 46rpx 65rpx 20rpx 65rpx;
   font-size: 26rpx;
@@ -33,7 +22,6 @@ page{
   line-height: 54rpx;
   text-align: right;
 }
-  
 .payment-house-content input{
   height: 50rpx;
   width: 380rpx;
@@ -74,24 +62,15 @@ page{
 }
 
 
-
-.payment-success {
-  position: relative;
-  width:634rpx;
-  height: 364rpx;
+.payment-showSuccess {
   margin: 530rpx auto;
-  background-color: #FFF;
-  border-radius: 12rpx;
+  height: 364rpx;
   font-size: 34rpx;
 }
+.payment-success {
+
+}
 .payment-no {
-  position: relative;
-  width:634rpx;
-  height: 364rpx;
-  margin: 530rpx auto;
-  background-color: #FFF;
-  border-radius: 12rpx;
-  font-size: 34rpx;
 }
 
 
@@ -144,23 +123,12 @@ page{
 
 
 
-
-.payment-remove {
-  position: relative;
-  width:634rpx;
-  height: 364rpx;
+.payment-showRemove{
   margin: 530rpx auto;
-  background-color: #FFF;
-  border-radius: 12rpx;
   font-size: 34rpx;
+  height: 364rpx;
 }
-.payment-remove-close {
-  position: absolute;
-  right: 23rpx;
-  top: 23rpx;
-  width: 42rpx;
-  height: 42rpx;
-}
+
 .payment-remove-message {
   text-align: center;
   line-height: 230rpx;

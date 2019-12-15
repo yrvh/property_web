@@ -1,5 +1,6 @@
 {
   "usingComponents": {
-    "notpay" : "/components/notpay/notpay"
+    "notpay" : "/components/notpay/notpay",
+    "history": "/components/history/history"
   }
 }

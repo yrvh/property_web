@@ -15,7 +15,7 @@ Page({
     activeRemoveBtn: 1,
     bindSuccess: false,
     showSuccess: false,
-    isOk: false,
+    isOk: true,
   },
 
   handleShowHouse() {   // 点击绑定房间号的函数
@@ -23,7 +23,7 @@ Page({
       showHouse: true,
     })
   },
-  handleCloseHouse() {   // 点击关闭房间号的函数
+  handleHouseClose() {   // 点击关闭房间号的函数
     this.setData({
       showHouse: false,
     })
@@ -55,6 +55,13 @@ Page({
       })
     }
   },
+  handleSuccessClose() {   // 点击右上角叉号,关闭成功提示信息的弹窗
+    this.setData({
+      showSuccess: false,
+    })
+  },
+
+
 
 
   handleRemoveHouse() {   // 点击解除绑定,函数
@@ -62,7 +69,7 @@ Page({
       showRemove: true,
     })
   },
-  handleCloseRemove() {   // 点击右上角叉号,  关闭 解除绑定房间的页面
+  handleRemoveClose() {   // 点击右上角叉号,  关闭 解除绑定房间的页面
     this.setData({
       showRemove: false,
     })

@@ -5,7 +5,7 @@
     <view class="house-cost-detail-loss">公共损耗费:<text> {{commonFee}}</text>元</view>
     <view class="house-cost-detail-rubbish">生活垃圾处理费<text> {{rubbishFee}}</text>元</view>
     <view class="house-cost-detail-total">合计:<text> {{totalFee}}</text>元</view>
-    <view class="house-cost-detail-btn cost-btn">{{houseCostBtn}}</view>
+    <view class="house-cost-detail-btn cost-btn" bindtap="handlePayCost">{{houseCostBtn}}</view>
   </view>
   
   <slot />

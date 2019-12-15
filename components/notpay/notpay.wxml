@@ -11,7 +11,8 @@
               commonFee="¥15.00" 
               rubbishFee="¥10.00" 
               totalFee="¥210"
-              cost-btn="cost-btn">
+              cost-btn="cost-btn"
+              bind:tapPayCost="handlePayCost">
 
     <view class="notpay-message">
       <view class="notpay-message-title">费用于2019年05月30日前缴付!</view>
@@ -19,3 +20,9 @@
     </view>
   </house-cost>
 </block>
+
+<gray-bg wx:if="{{showCostDetails}}" 
+          bind:tapWindowClose="handleCostDetailsClose"
+          window-top="notpay-showCostDetails">
+  <view> 这是缴费详情页</view>
+</gray-bg>

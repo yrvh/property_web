@@ -1,8 +1,8 @@
 Page({
   data: {
-    active: 2,
-    notpayIconPath: "/assets/icon/notpay2.png",
-    historyIconPath: "/assets/icon/history2.png",
+    active: 1,
+    notpayIconPath: "/assets/icon/notpay1.png",
+    historyIconPath: "/assets/icon/history1.png",
   },
   handleChangeNav(e) {   // 切换 "待缴费用"和"缴费记录"页的函数
     this.setData({

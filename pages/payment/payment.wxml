@@ -16,6 +16,7 @@
   </view>
 
   <notpay wx:if="{{active==1}}"/>
+  <history wx:if="{{active==2}}"/>
 </block>
 
 
