@@ -73,8 +73,12 @@
 <gray-bg wx:if="{{showSuccess}}" 
           bind:tapWindowClose="handleSuccessClose"
           window-top="payment-showSuccess">
-  <view class="payment-success" wx:if="{{bindSuccess}}">我是绑定成功页</view>
-  <view class="payment-noSucc" wx:if="{{!bindSuccess}}">我是绑定失败页</view>
+  <view class="payment-success">
+    <image class="payment-success-icon" src="{{successIcon}}"></image>
+    <view class="payment-success-message">{{successMessage}}</view>
+    <view class="payment-success-prompt">{{successPrompt}}</view>
+    <view class="payment-success-btn" bindtap="handleSuccBack">确 定</view>
+  </view>
 </gray-bg>
 
 

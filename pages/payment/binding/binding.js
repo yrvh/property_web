@@ -13,9 +13,11 @@ Page({
     showRemove: false,
     houseList: [],
     activeRemoveBtn: 1,
-    bindSuccess: false,
     showSuccess: false,
     isOk: true,
+    successIcon: "/assets/icon/succ.png",
+    successMessage: "房间绑定成功!",
+    successPrompt: "银河小区3#303"
   },
 
   handleShowHouse() {   // 点击绑定房间号的函数
@@ -32,22 +34,26 @@ Page({
     if(this.data.isOk){
       this.setData({
         showSuccess: true,
-        bindSuccess: true,
+        successIcon: "/assets/icon/succ.png",
+        successMessage: "房间绑定成功!",
+        successPrompt: "银河小区3#303",
+        messageNum: this.data.messageNum + 1,
+        houseList: this.data.houseList.concat(1),
       })
     }
     else{
       this.setData({
-        showSuccess: false,
-        bindSuccess: false,
+        showSuccess: true, 
+        successIcon: "/assets/icon/fail.png",
+        successMessage: "房间绑定失败!",
+        successPrompt: "请填写正确信息",
       })
     }
     this.setData({
       showHouse: false,
-      messageNum: this.data.messageNum + 1,
     })
     this.setData({
       bindMessage: "当前绑定" + this.data.messageNum + "条房间信息",
-      houseList: this.data.houseList.concat(1),
     })
     if(this.data.houseList.length>0){
       this.setData({
@@ -55,6 +61,20 @@ Page({
       })
     }
   },
+  handleSuccBack() {   // 点击确定按钮 返回
+    if (this.data.isOk) {
+      this.setData({
+        showSuccess: false,
+      })
+    }
+    else {
+      this.setData({
+        showSuccess: false,
+        showHouse: true
+      })
+    }
+  },
+
   handleSuccessClose() {   // 点击右上角叉号,关闭成功提示信息的弹窗
     this.setData({
       showSuccess: false,

@@ -1,3 +1,17 @@
-<view>
-  我的缴费记录页面
-</view>
+<block wx:for="{{3}}" wx:key="{{index}}">
+
+  <!-- 引入自定义的 局部组件,实现房间费用信息的显示 -->
+  <house-cost houseNum="2#303" 
+              propertyFee="¥185.00" 
+              commonFee="¥15.00" 
+              rubbishFee="¥10.00" 
+              totalFee="¥210"
+              houseCostBtn="已缴费"
+              cost-btn="cost-btn">
+
+    <view class="history-message">
+      <text class="history-message-date">2019年05月30日缴纳</text>
+      <view class="history-message-remark">是否逾期:<text class="{{overdue? 'remark-overdue':''}}">否</text></view>
+    </view>
+  </house-cost>
+</block>

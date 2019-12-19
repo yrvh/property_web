@@ -64,12 +64,36 @@ page{
 
 .payment-showSuccess {
   margin: 530rpx auto;
-  height: 364rpx;
-  font-size: 34rpx;
 }
 .payment-success {
-
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 34rpx;
+  padding-top: 64rpx;
 }
+.payment-success-icon {
+  width: 130rpx;
+  height: 130rpx;
+}
+.payment-success-message {
+  margin-top: 20rpx;
+}
+.payment-success-prompt {
+  margin-top: 10rpx;
+  margin-bottom: 40rpx;
+  color: #999;
+}
+.payment-success-btn {
+  width: 376rpx;
+  line-height: 90rpx;
+  border-radius: 45rpx;
+  background-color: #35D7AD;
+  color: #fff;
+  text-align: center;
+  font-size: 40rpx;
+}
+
 .payment-no {
 }
 
